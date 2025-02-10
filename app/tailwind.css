@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --gradient-primary-start: #0A192F;
+    --gradient-primary-end: #00C9FF;
+    --gradient-secondary-start: #6A0DAD;
+    --gradient-secondary-end: #3A86FF;
+    --background-dark-start: #090C14;
+    --background-dark-end: #131720;
+    --background-light-start: #F5F5F5;
+    --background-light-end: #FFFFFF;
+  }
+}
+
+/* Custom Gradient Backgrounds */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, var(--gradient-primary-start), var(--gradient-primary-end));
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(135deg, var(--gradient-secondary-start), var(--gradient-secondary-end));
+}
+
+/* Glassmorphism */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .glass-card {
+  background: rgba(10, 25, 47, 0.2);
+}
+
+/* Gradient Text Animation */
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    var(--gradient-primary-end),
+    var(--gradient-secondary-end)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient 8s linear infinite;
+  background-size: 200% auto;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+/* Glow Effect */
+.glow-effect {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 20px rgba(0, 201, 255, 0.3);
+}
+
+.glow-effect:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(0, 201, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.glow-effect:hover:before {
+  left: 100%;
+}
+
+/* Dark mode styles */
+.dark body {
+  background: linear-gradient(135deg, var(--background-dark-start), var(--background-dark-end));
+  color-scheme: dark;
+}
+
+/* Light mode styles */
+body {
+  background: linear-gradient(135deg, var(--background-light-start), var(--background-light-end));
+}
