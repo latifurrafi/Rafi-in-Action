@@ -8,7 +8,7 @@ function SkillCard({ title, skills }) {
         {skills.map((skill, index) => (
           <span
             key={index}
-            className="px-3 py-1 bg-transparent border shadow-md shadow-cyan-800 border-blue-600/50 rounded-md text-sm text-gray-300"
+            className="px-3 py-1 bg-transparent border shadow-lg border-blue-600/50 rounded-md text-sm text-gray-300 hover:bg-blur hover:text-white hover:shadow-cyan-800 transition-all"
           >
             {skill}
           </span>

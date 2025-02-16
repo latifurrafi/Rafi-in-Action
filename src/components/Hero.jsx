@@ -14,9 +14,9 @@ function Hero() {
             <h2 className="text-sm md:text-1xl lg:text-2xl text-gray-700 dark:text-gray-300 mb-6">
               Software Engineer | Backend Developer | Machine Learning Enthusiast
             </h2>
-            <p className="text-sm md:text-xl lg:text-1xl text-gray-600 dark:text-gray-400 mb-8">
+            {/* <p className="text-sm md:text-xl lg:text-1xl text-gray-600 dark:text-gray-400 mb-8">
               Building scalable APIs, writing clean code, and exploring AI-driven solutions.
-            </p>
+            </p> */}
             <div className="flex flex-col md:flex-row  gap-4">
               <a
                 href="/public/Latifur_Rahman_Resume.pdf"

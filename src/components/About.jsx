@@ -23,7 +23,7 @@ function About() {
             <h3 className="text-xl font-semibold mb-4 gradient-text">Work & Learning History</h3>
             <ul className="text-sm md:text-xl lg:text-1xl list-disc pl-6 text-gray-700 dark:text-gray-300">
               <li>Studied Computer Science</li>
-              <li>5+ years of experience in Software Engineering</li>
+              <li>3+ years of experience in Software Engineering</li>
               <li>Currently exploring Machine Learning, AI, and Data Science</li>
             </ul>
           </div>
