@@ -12,8 +12,8 @@ function Contact() {
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-[#050A30] to-[#050A30]">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center gradient-text mb-12">
-          Let's Connect
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center gradient-text mb-12 flex items-center justify-center">
+          <p className='border-4 border-blue-500/30 max-w-96 px-6 py-3 rounded-2xl text-4xl'>Let's Connect</p>
         </h2>
         <div className="max-w-3xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

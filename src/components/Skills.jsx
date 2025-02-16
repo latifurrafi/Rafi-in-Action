@@ -32,8 +32,8 @@ function Skills() {
   return (
     <section id="skills" className="py-20 bg-gradient-to-b from-[#000C66] to-[#000C66]">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center gradient-text mb-12">
-          Skills & Tech Stack
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center gradient-text mb-12 flex items-center justify-center">
+          <p className='border-4 border-blue-500/30 max-w-96 px-5 py-3 rounded-xl text-4xl'>Skills & Tech Stack</p>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillsData.map((skill, index) => (

@@ -4,7 +4,7 @@ function About() {
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-[#050A30] to-[#000C66]">
       <div className="container mx-auto px-6">
-        <div className="text-3xl font-bold text-center gradient-text mb-12 flex items-center justify-center">
+        <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-center gradient-text mb-12 flex items-center justify-center">
           <p className='border-4 border-blue-500/30 max-w-64 px-5 py-3 rounded-xl text-4xl'>About Me</p>
         </div>
         <div className="max-w-3xl mx-auto glass-card p-8 rounded-xl">
