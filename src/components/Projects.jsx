@@ -6,7 +6,7 @@ const projectsData = [
     title: "Chat-Bot",
     description: "A chatbot built using Python and Flask, powered by Generative AI with Gemini-1.5-Flash.It's leverages AI models to understand user queries and generate human-like replies. Perfect for customer support, automation, or personal assistance.",
     tech: ["Python", "Flask", "Generative-Ai", "Gemini-1.5-flash"],
-    image: "src/components/chatbot.webp",
+    image: "https://i.ibb.co.com/Z6NH7wWG/chatbot.webp",
     githubUrl: "https://github.com/latifurrafi/ChatBot"
   },
 
